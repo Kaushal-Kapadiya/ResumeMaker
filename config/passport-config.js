@@ -17,13 +17,14 @@ const bcryptjs = require("bcryptjs");
 const User = require("../models/User.js");
 
 // dotenv related
-const dotenv = require("dotenv");
-dotenv.config({ path: "./.env", encoding: "utf-8" });
+//const dotenv = require("dotenv");
+//dotenv.config({ path: "./.env", encoding: "utf-8" });
+//require('dotenv').config({ path: require('find-config')('.env') })
 
 const oauthStrategyOptions = {
   // options for google strat.
-  clientID: process.env.GOOGLE_CLIENT_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+  clientID: "946720722382-aeniumscfki8j9sajuc1hibd6p75ad84.apps.googleusercontent.com",
+  clientSecret: "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",
   callbackURL:
     "https://g24-cvmaker-preview.herokuapp.com/api/login/auth/google/callback",
   // "/api/login/auth/google/callback",
@@ -72,7 +73,7 @@ function passportInit(passport) {
     new JWTStrategy(
       {
         jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
-        secretOrKey: process.env.ACCESS_TOKEN_SECRET,
+        secretOrKey: "f3eda9f3570b127b3e26afa05780783e62e3442a05261e54fdd9e0bb135a629fe75514a0058298d74c77ec2dd060d1039d96600016eefca0ade5a28cb16445f0",
       },
       myJWTStrategy
     )

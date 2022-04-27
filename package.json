@@ -1,7 +1,7 @@
 {
   "name": "cvmaker",
   "version": "1.0.0",
-  "description": "CV maker SEN group-24 project",
+  "description": "Resume maker",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
@@ -20,9 +20,10 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
+    "find-config": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.0",
     "morgan": "^1.10.0",

@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+  require('dotenv').config();
+}
+
 // express related
 const express = require("express");
 const app = express();
@@ -15,8 +19,8 @@ const morgan = require("morgan");
 const cors = require("cors");
 
 // dotenv related
-const dotenv = require("dotenv");
-dotenv.config({ path: "./.env", encoding: "utf-8" });
+//const dotenv = require("dotenv");
+//dotenv.config({ path: "./.env", encoding: "utf-8" });
 
 // mongoose related
 const mongoose = require("mongoose");
@@ -54,7 +58,7 @@ app.use("*", function (req, res, next) {
 });
 app.options("*", cors()); // include before other routes
 // connecting node.js app with database
-const dbURI = process.env.DBURI;
+const dbURI ="mongodb+srv://kaushal:kaushal@cluster0.ewvp1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI, { useUnifiedTopology: true, useNewUrlParser: true })
   .then(() => {
@@ -65,7 +69,7 @@ mongoose
 
 app.use(
   session({
-    secret: process.env.SECRET,
+    secret: "kaushal",
     saveUninitialized: true,
     resave: true,
   })
