@@ -26,7 +26,7 @@ const oauthStrategyOptions = {
   clientID: "946720722382-aeniumscfki8j9sajuc1hibd6p75ad84.apps.googleusercontent.com",
   clientSecret: "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",
   callbackURL:
-    "https://g24-cvmaker-preview.herokuapp.com/api/login/auth/google/callback",
+    "https://rocky-refuge-04192.herokuapp.com/api/login/auth/google/callback",
   // "/api/login/auth/google/callback",
 };
 
