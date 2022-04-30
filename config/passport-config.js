@@ -23,8 +23,10 @@ const User = require("../models/User.js");
 
 const oauthStrategyOptions = {
   // options for google strat.
-  clientID: "801288704174-u9qn5f8nbbedlqvnv75gp9mtnclte1o7.apps.googleusercontent.com",
-  clientSecret: "NiZi0hITW2kSLpKR1lHuN8o6",
+  //: "801288704174-u9qn5f8nbbedlqvnv75gp9mtnclte1o7.apps.googleusercontent.com",
+  //: "NiZi0hITW2kSLpKR1lHuN8o6",
+  clientID: process.env.GOOGLE_CLIENT_ID,
+  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
   callbackURL:
     //"https://localhost:5000/api/login/auth/google/callback",
    "/api/login/auth/google/callback",
@@ -73,7 +75,8 @@ function passportInit(passport) {
     new JWTStrategy(
       {
         jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
-        secretOrKey: "f3eda9f3570b127b3e26afa05780783e62e3442a05261e54fdd9e0bb135a629fe75514a0058298d74c77ec2dd060d1039d96600016eefca0ade5a28cb16445f0",
+        //secretOrKey: "f3eda9f3570b127b3e26afa05780783e62e3442a05261e54fdd9e0bb135a629fe75514a0058298d74c77ec2dd060d1039d96600016eefca0ade5a28cb16445f0",
+        secretOrKey: process.env.ACCESS_TOKEN_SECRET,
       },
       myJWTStrategy
     )

@@ -58,7 +58,8 @@ app.use("*", function (req, res, next) {
 });
 app.options("*", cors()); // include before other routes
 // connecting node.js app with database
-const dbURI ="mongodb+srv://kaushal:kaushal@cluster0.ewvp1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+//const dbURI ="mongodb+srv://kaushal:kaushal@cluster0.ewvp1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const dbURI = process.env.DBURI;
 mongoose
   .connect(dbURI, { useUnifiedTopology: true, useNewUrlParser: true })
   .then(() => {
