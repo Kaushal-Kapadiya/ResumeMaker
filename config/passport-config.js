@@ -23,11 +23,11 @@ const User = require("../models/User.js");
 
 const oauthStrategyOptions = {
   // options for google strat.
-  clientID: "946720722382-aeniumscfki8j9sajuc1hibd6p75ad84.apps.googleusercontent.com",
-  clientSecret: "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",
+  clientID: "801288704174-u9qn5f8nbbedlqvnv75gp9mtnclte1o7.apps.googleusercontent.com",
+  clientSecret: "NiZi0hITW2kSLpKR1lHuN8o6",
   callbackURL:
-    "https://rocky-refuge-04192.herokuapp.com/api/login/auth/google/callback",
-  // "/api/login/auth/google/callback",
+    //"https://localhost:5000/api/login/auth/google/callback",
+   "/api/login/auth/google/callback",
 };
 
 function myLocalStrategy(username, password, done) {

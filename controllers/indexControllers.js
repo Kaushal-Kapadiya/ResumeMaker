@@ -97,9 +97,12 @@ const login_post = (req, res, next) => {
     if (!user) return res.sendStatus(401).json();
 
     // Making a jwt token signed with user information
+    const tempkk='f3eda9f3570b127b3e26afa05780783e62e3442a05261e54fdd9e0bb135a629fe75514a0058298d74c77ec2dd060d1039d96600016eefca0ade5a28cb16445f0';
     const accessToken = jwt.sign(
       { username: user.username, id: user._id },
-      process.env.ACCESS_TOKEN_SECRET
+      tempkk
+      //ACCESS_TOKEN_SECRET
+      //'f3eda9f3570b127b3e26afa05780783e62e3442a05261e54fdd9e0bb135a629fe75514a0058298d74c77ec2dd060d1039d96600016eefca0ade5a28cb16445f0'
     );
 
     res.json({
