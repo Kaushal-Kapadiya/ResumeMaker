@@ -52,7 +52,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10% 0.05rem 10%;
-  background-color: #24419f09;
+  background-color: rgb(28, 131, 120);
 }
 
 .brand-name {
@@ -113,9 +113,11 @@ header {
   color: white;
   padding-top: 0.6rem;
 }
+
 .btn-submit:hover {
   box-shadow: 0px 4px 20px rgba(27, 90, 148, 0.2);
 }
+
 .btn-submit a {
   text-decoration: none;
   color: white;
@@ -124,6 +126,7 @@ header {
 .container {
   margin-top: 100px;
 }
+
 button {
   align-items: center;
   justify-content: center;
@@ -133,10 +136,12 @@ h1 {
   font-size: 35px;
   font-weight: bold;
 }
+
 form {
   margin-top: 50px;
   font-size: 25px;
 }
+
 small {
   font-size: 15px;
 }

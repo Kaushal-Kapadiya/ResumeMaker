@@ -19,7 +19,7 @@ a {
   font-family: "product_sansregular", Arial, sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  color: #24419f;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10% 0.05rem 10%;
-  background-color: #24419f09;
+  background-color: rgb(28, 131, 120);
 }
 
 /* .brand-name {
@@ -249,8 +249,8 @@ header h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .counters .container > div:nth-of-type(1),
-  .counters .container > div:nth-of-type(2) {
+  .counters .container>div:nth-of-type(1),
+  .counters .container>div:nth-of-type(2) {
     border-bottom: 1px lightskyblue solid;
     padding-bottom: 20px;
   }

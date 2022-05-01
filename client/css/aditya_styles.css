@@ -66,8 +66,12 @@ a {
   font-family: "product_sansregular", Arial, sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  color: #24419f;
+  color: #ffffff;
   text-decoration: none;
+}
+
+h1 {
+  color: rgb(28, 131, 120);
 }
 
 .avatar-btn {
@@ -82,7 +86,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10% 0.05rem 10%;
-  background: rgba(255, 255, 255, 0.637);
+  background: rgb(28, 131, 120);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   width: 100%;
@@ -95,7 +99,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(230, 231, 248, 0.5);
+  background-color: rgb(28, 131, 120);
   -webkit-backdrop-filter: blur(12px);
   -o-backdrop-filter: blur(12px);
   -moz-backdrop-filter: blur(12px);
@@ -105,7 +109,7 @@ header {
 .brand-name {
   margin: -0.6rem 0 0 0;
   text-decoration: none;
-  color: blue;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -153,7 +157,7 @@ header {
 
 .btn-create {
   font-family: "product_sansbold", Arial, sans-serif;
-  background-color: #24419f;
+  background-color: rgb(28, 131, 120);
   color: white;
   border-radius: 100px;
   font-size: 1.7rem;
@@ -164,6 +168,7 @@ header {
 .btn-create:hover {
   box-shadow: 0px 4px 20px rgba(27, 90, 148, 0.2);
 }
+
 .crt {
   height: 1.3rem;
   width: 1.3rem;
@@ -183,7 +188,7 @@ header {
   width: 167px;
   display: flex;
   justify-content: center;
-  background: #24419f;
+  background: rgb(28, 131, 120);
   border-radius: 25px;
   font-family: "product_sansbold", Arial, sans-serif;
   font-size: 18px;
@@ -191,6 +196,7 @@ header {
   color: white;
   padding-top: 0.6rem;
 }
+
 .btn-submit:hover {
   box-shadow: 0px 4px 20px rgba(27, 90, 148, 0.2);
 }
@@ -200,7 +206,7 @@ header {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  color: #24419f;
+  color: rgb(28, 131, 120);
 }
 
 .google-icon {
@@ -247,6 +253,7 @@ header {
   padding: 0;
   margin-left: -2rem;
 }
+
 .create a {
   font-weight: bold;
   letter-spacing: 0.07rem;
@@ -272,7 +279,7 @@ header {
   width: 345px;
   height: 650px;
   border-color: #24419f00;
-  box-shadow: -2px 8px 32px rgba(124, 124, 124, 0.12);
+  box-shadow: -2px 8px 32px rgb(28, 131, 120);
   background: #f4f5f7;
   border-radius: 22px;
   margin-top: 2rem;
@@ -309,9 +316,9 @@ header {
 .btn-preview {
   font-family: "product_sansbold", Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0);
-  color: #24419f;
+  color: rgb(28, 131, 120);
   border-width: 0.3rem;
-  border-color: #24419f;
+  border-color: rgb(28, 131, 120);
   border-radius: 150px;
   font-size: 1.4rem;
   font-size: 400;
@@ -326,7 +333,7 @@ header {
 
 .btn-edit {
   font-family: "product_sansbold", Arial, sans-serif;
-  background-color: #24419f;
+  background-color: rgb(28, 131, 120);
   color: white;
   border-radius: 150px;
   font-size: 1.4rem;
@@ -400,7 +407,7 @@ header {
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
-  background-color: #24419f;
+  background-color: rgb(28, 131, 120);
   padding: 0.4rem 1.2rem;
   border-radius: 8px;
 }
@@ -437,7 +444,7 @@ header {
 
 .modal-btn-edit {
   font-family: "product_sansbold", Arial, sans-serif;
-  background-color: #24419f;
+  background-color: rgb(28, 131, 120);
   color: white;
   border-radius: 150px;
   font-size: 1.4rem;
@@ -467,7 +474,7 @@ header {
   border-radius: 2rem;
   margin: 2rem 1rem 1rem 1rem;
   border-style: dashed;
-  border-color: #24419f;
+  border-color: rgb(28, 131, 120);
 }
 
 .dropzone {
@@ -475,7 +482,7 @@ header {
   background-color: #f4f4fe;
   border-radius: 2rem;
   margin: 2rem 1rem 1rem 1rem;
-  border: 2px dashed #24419f;
+  border: 2px dashedrgb(28, 131, 120);
 }
 
 .drap-drop-text {
@@ -529,7 +536,7 @@ header {
 }
 
 .admin-badge-text {
-  color: #24419f;
+  color: rgb(28, 131, 120);
   font-weight: bolder;
   letter-spacing: 1.2px;
   margin: 0 0.5rem;
