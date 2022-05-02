@@ -105,7 +105,7 @@ header {
   font-weight: normal;
   font-size: 28px;
   line-height: 24px;
-  color: #24419f;
+  color: rgb(28, 131, 120);
 }
 
 .list {
@@ -126,7 +126,7 @@ header {
   top: 45.83%;
   bottom: 29.17%;
 
-  background: #24419f;
+  background: rgb(28, 131, 120);
 }
 
 .traffic-css {
@@ -140,7 +140,7 @@ header {
   font-weight: normal;
   font-size: 28px;
   line-height: 24px;
-  color: #24419f;
+  color: rgb(28, 131, 120);
 
   background: rgba(188, 191, 255, 0.2);
   border-radius: 26px;
@@ -221,7 +221,7 @@ header h1 {
 }
 
 .counters {
-  background: #0f479a;
+  background: rgb(28, 131, 120);
   color: #fff;
   padding: 40px 20px;
   border-top: 3px lightskyblue solid;
